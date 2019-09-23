@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Ejercicios con formularios</h1>
-    <h2>Formularios sencillo en html</h2>
+    <h2>Formularios sencillo 1 en HTML5</h2>
     <form name="formulario1" id="formulario1id" method="" action="">
         <fieldset>
             <legend>Formulario básico</legend>
@@ -19,6 +19,26 @@
         <fieldset>
             <legend>Formulario básico 2</legend>
             Campo de texto 2 <input type="text" id="campotexto2id" name=campotexto2>
+        </fieldset>
+    </form>
+
+    <h2>Formulario sencillo 2 en HTML5</h2>
+    <form name="formulario2" id="formulario2id" method="" action="">
+        <fieldset>
+            <legend>Formulario sencillo 2 con labels</legend> 
+            <label for="idcampo3" id="etiqueta1">Introduce el nombre del usuario:</label>  
+            <input type="text" id="idcampo3" name="campo3" placeholder="Nombre de usuario">  
+            <br>
+            <h3>Campos de tipo datalist</h3>
+            Lista de SSOO: <input list="listassoo" id="idlistassoo">
+            <datalist id="listassoo">
+                <option value="Windows 10 H2 2019">Windows 10 H2 2019</option>
+                <option value="Ubuntu 20.04">Ubuntu 20.04</option>
+                <option value="Debian 10.0 Buster">Debian 10.0 Buster</option>
+            </datalist>
+            <h3>Elementos de tipo botón</h3>
+            <input type="button" onclick="alert('Hola a todos')" id="idboton1" value="Saluda">
+            <input type="reset" value="Limpiar campos del formulario 2" id="isbotonreset1">
         </fieldset>
     </form>
 </body>
