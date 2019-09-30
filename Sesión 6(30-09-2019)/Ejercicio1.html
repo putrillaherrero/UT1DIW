@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <form id="formularioId" action="">
+        <fieldset>
+            <legend>Formulario con campo que utiliza pattern avanzado</legend>
+
+            <label for="dniId">D.N.I.: </label>
+            <input type="text" required maxlength="9" size="11" pattern="[a-zA-z]?[0-9]{7}[0-9]?[a-zA-z]{1}" id="dniId" 
+            placeholder="Escriba DNI..." title="El DNI contiene 8 números, seguido de una letra o una letra, 7 números y una letra.">
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
