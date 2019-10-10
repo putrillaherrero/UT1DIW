@@ -12,5 +12,27 @@
     <p>Es un elemento de bloque</p>
 
     <div>Esto es una capa. Se utiliza para estructurar el contenido de la página.</div>
+
+    <br>
+    <audio id="idAudio" controls>
+        <source src="Fat Joe, Cardi B, Anuel AA - YES (Official Video).mp3" type="audio/mpeg"> 
+        <source src="Fat Joe, Cardi B, Anuel AA - YES (Official Video).wav" type="audio/wav">
+        Tu navegador no esta adaprado para reproducir audio desde HTML5.  
+    </audio>
+
+    <br>
+    <h2>Elemmento de tipo progress</h2>
+    <progress max="100" value="33"></progress>
+    <h2>Elemmento de tipo canvas</h2>
+    <canvas id="idCanvas" width="300" height="150" style="border: 1px solid black;">
+        Su navegador no soporta el elemento canvas.
+    </canvas>
+
+    <script>
+        var canvas=document.getElementById("idCanvas");
+        var contexto= canvas.getContext("2d");
+        contexto.fillStyle="#FF0000";
+        contexto.fillRect(0, 0, 150, 75);
+    </script>
 </body>
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio Boostrap con instalación local</title>
+    <!--Boostrap con instalación local-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .fondoFea {
+            background: #feafea;
+        }
+
+        .fondoReal {
+            background: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boostrap</h1>
+    <br>
+    <div class="container">
+        Contenedor responsivo de ancho fijo.
+    </div>
+    <div class="container-fluid">
+        Contenedor responsivo con ancho completo.
+    </div>
+    <br><br>
+    <h2>Dividir el ancho en tres contenedores para dispositivos pequeños</h2>
+    <br>
+    <div class="row">
+        <div class="col-sm-4 fondoReal">Columna de tamaño 4 para dispositivos pequeños</div>
+        <div class="col-sm-4 fondoFea">Columna de tamaño 4 para dispositivos pequeños</div>
+        <div class="col-sm-4 fondoReal">Columna de tamaño 4 para dispositivos pequeños</div>
+    </div>
+    <br><br>
+
+    <h2>Distribuciones adaptables a diferentes dispositivos</h2>
+    <div class="row">
+        <div class="col-6 col-sm-9 fondoReal">col-6 col-sm-9</div>
+        <div class="col-6 col-sm-3 fondoFea">col-6 col-sm-3</div>
+    </div>
+
+    <kbd>Escritura tipo teclado</kbd>
+    <mark>Texto marcado</mark>
+    <h2 class="display-3">Encabezado con display-3</h2>
+    <blockquote class="text-warning">Cita de texto con la clase text-warning</blockquote>
+    <code>var i = 100;</code>
+
+    <h2>Imagen responsiva</h2>
+    <img src="img/ceporro.jfif" class="img-fluid rounded mx-auto d-block">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Ciclo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pablo</td>
+                <td>Utrilla</td>
+                <td>DAW</td>
+            </tr>
+            <tr>
+                <td>Sergio</td>
+                <td>Pérez</td>
+                <td>DAW</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
